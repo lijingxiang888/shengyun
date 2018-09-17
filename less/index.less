@@ -1,0 +1,51 @@
+.transition(@property:all;@duration:.5s;@function:linear;@delay:0s;) {
+  -webkit-transition: @property @duration @function @delay;
+  -moz-transition: @property @duration @function @delay;
+  -ms-transition: @property @duration @function @delay;
+  -o-transition: @property @duration @function @delay;
+  transition: @property @duration @function @delay;
+}
+
+.header {
+  position: absolute;
+  left: 50%;
+  margin-left: -585px;
+  padding-top: 15px;
+  z-index: 100;
+
+  .navbar {
+    a {
+      color: #fff;
+
+      &.navbar-brand {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+    }
+
+    .dropdown-menu {
+      background: none;
+
+      li {
+        margin-bottom: 2px;
+        background-color: #eee;
+
+        &:hover {
+          .transition();
+          background-color: #A3C31D;
+        }
+
+        a {
+          padding: 10px 15px;
+          color: #5e5e5e;
+          background: none;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+}
