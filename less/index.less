@@ -44,6 +44,7 @@
           &:hover {
             color: #fff;
           }
+
         }
       }
     }
@@ -83,6 +84,10 @@
         .enterprise-icon {
           background-position: -202px -66px;
         }
+      }
+
+      .glyphicon-triangle-bottom {
+        display: block;
       }
     }
 
@@ -126,5 +131,45 @@
         background-position: -202px 2px;
       }
     }
+
+    .glyphicon-triangle-bottom {
+      display: none;
+    }
   }
 }
+
+#myTabContent {
+  margin-top: 48px;
+
+  .tab-pane {
+    height: 388px;
+    background-color: #f9f9f9;
+  }
+}
+
+/*about样式*/
+.about {
+  height: 417px;
+  margin-top: 60px;
+  padding: 6px 0;
+  background-color: #f5f5f5;
+  overflow: hidden;
+
+  .row {
+    height: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+
+    .about-title:before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: #155683;
+      left: 16px;
+      top: 50px;
+    }
+  }
+}
+
+/*team样式*/

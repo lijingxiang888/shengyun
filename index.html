@@ -69,14 +69,14 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+        </div>
     </nav>
 </header>
 <!--header end-->
 
 <!--banner begin-->
-<div class="container-fluid">
+<div class="banner container-fluid">
     <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
@@ -118,57 +118,119 @@
 <!--banner end-->
 
 <!--tab begin-->
-<div class="container">
-    <ul id="myTab" class="nav nav-tabs">
+<div class="tab container">
+    <ul id="myTab" class="nav nav-tabs row">
         <li class="active col-md-3">
             <a href="#brand" data-toggle="tab">
                 商标注册
                 <p class="brand-icon"></p>
             </a>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
         </li>
         <li class="col-md-3">
             <a href="#patent" data-toggle="tab">
                 专利申请
                 <p class="patent-icon"></p>
-            </a></li>
+            </a>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
+        </li>
         <li class="col-md-3">
             <a href="#copyright" data-toggle="tab">
                 版权服务
                 <p class="copyright-icon"></p>
             </a>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
         </li>
         <li class="col-md-3">
             <a href="#enterprise" data-toggle="tab">
                 企业服务
                 <p class="enterprise-icon"></p>
             </a>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
         </li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in active" id="brand">
-            <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/brand-pic.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="patent">
-            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
-                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/patent-pic.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="copyright">
-            <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/copyright-pic.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="enterprise">
-            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-            </p>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/enterprise-pic.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <!--tab end-->
+
+<!--about begin-->
+<div class="about container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/about-pic.png" alt="">
+            <p style="font-size: 36px;color: #ccc;font-weight: bold">What Do We Do?</p>
+        </div>
+        <div class="about-title col-md-6">
+            <h2 style="margin-top: 0;font-weight: bold">关于我们</h2>
+            <p style="margin-top:44px;line-height: 2em;text-indent: 2em">
+                保定盛雲知识产权代理有限公司隶属于北京盛广信合知识产权代理有限公司，是目前国内专业性很强的致力于打造中小企业“一站式”服务的公司之一。公司成立以来，本着“使命、诚 信、团队、责任”的公司宗旨，全方位为中小创新型企业提供国内外咨询，商标代理，软件及作品著作权登记，知识产权软件开发，专利、商标侵权诉讼，专利检索 分析，知识产权战略分析，知识产权价值评估，知识产权培训，知识产权海外预警分析，高新企业认定，创新基金申请，公司注册，财务咨询等多元化的服务。
+            </p>
+            <div style="text-align: right"><a href="#">More+</a></div>
+        </div>
+    </div>
+</div>
+<!--about end-->
+
+<!--team begin-->
+<div class="team container">
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-8">
+
+        </div>
+    </div>
+</div>
+<!--team end-->
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
     $(function () {
-        $('#myTab a:last').tab('show')
+        $('#myTab a:first').tab('show')
     })
 </script>
 </body>
