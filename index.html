@@ -83,6 +83,8 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
@@ -94,6 +96,12 @@
             </div>
             <div class="item">
                 <img src="images/banner3.jpg" alt="Third slide">
+            </div>
+            <div class="item">
+                <img src="images/banner4.jpg" alt="Fourth slide">
+            </div>
+            <div class="item">
+                <img src="images/banner5.jpg" alt="Fifth slide">
             </div>
         </div>
         <!-- 轮播（Carousel）导航 -->
@@ -112,35 +120,42 @@
 <!--tab begin-->
 <div class="container">
     <ul id="myTab" class="nav nav-tabs">
-        <li class="active">
-            <a href="#home" data-toggle="tab">
-                菜鸟教程
+        <li class="active col-md-3">
+            <a href="#brand" data-toggle="tab">
+                商标注册
+                <p class="brand-icon"></p>
             </a>
         </li>
-        <li><a href="#ios" data-toggle="tab">iOS</a></li>
-        <li class="dropdown">
-            <a href="#" id="myTabDrop1" class="dropdown-toggle"
-               data-toggle="dropdown">Java
-                <b class="caret"></b>
+        <li class="col-md-3">
+            <a href="#patent" data-toggle="tab">
+                专利申请
+                <p class="patent-icon"></p>
+            </a></li>
+        <li class="col-md-3">
+            <a href="#copyright" data-toggle="tab">
+                版权服务
+                <p class="copyright-icon"></p>
             </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-                <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
-                <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
-            </ul>
+        </li>
+        <li class="col-md-3">
+            <a href="#enterprise" data-toggle="tab">
+                企业服务
+                <p class="enterprise-icon"></p>
+            </a>
         </li>
     </ul>
     <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in active" id="home">
+        <div class="tab-pane fade in active" id="brand">
             <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
         </div>
-        <div class="tab-pane fade" id="ios">
+        <div class="tab-pane fade" id="patent">
             <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
                 TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
         </div>
-        <div class="tab-pane fade" id="jmeter">
+        <div class="tab-pane fade" id="copyright">
             <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
         </div>
-        <div class="tab-pane fade" id="ejb">
+        <div class="tab-pane fade" id="enterprise">
             <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
             </p>
         </div>

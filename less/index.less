@@ -6,6 +6,7 @@
   transition: @property @duration @function @delay;
 }
 
+/*头部样式*/
 .header {
   position: absolute;
   left: 50%;
@@ -48,4 +49,82 @@
     }
   }
 
+}
+
+/*轮播图样式*/
+
+/*tab样式*/
+#myTab {
+  margin-top: 50px;
+  border: none;
+
+  li {
+    height: 120px;
+    text-align: center;
+
+    &.active {
+
+      a {
+        color: #fff;
+        background-color: #155683;
+
+        .brand-icon {
+          background-position: 0 -65px;
+        }
+
+        .patent-icon {
+          background-position: -71px -65px;
+        }
+
+        .copyright-icon {
+          background-position: -135px -66px;
+        }
+
+        .enterprise-icon {
+          background-position: -202px -66px;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      color: #000;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background-color: #eee;
+
+      .brand-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        background: url("../images/baseIcon.png") no-repeat;
+        background-size: 320px 191px;
+        background-position: 0 2px;
+      }
+
+      .patent-icon {
+        .brand-icon();
+
+        background-size: 328px 191px;
+        background-position: -71px 2px;
+      }
+
+      .copyright-icon {
+        .brand-icon();
+
+        background-size: 325px 192px;
+        background-position: -135px 2px;
+      }
+
+      .enterprise-icon {
+        .brand-icon();
+
+        background-size: 328px 192px;
+        background-position: -202px 2px;
+      }
+    }
+  }
 }
