@@ -10,11 +10,6 @@ h2 {
   font-weight: bold;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 /*头部样式*/
 .header {
   position: absolute;
@@ -149,8 +144,24 @@ img {
   margin-top: 48px;
 
   .tab-pane {
-    height: 388px;
+    padding: 20px 0;
     background-color: #f9f9f9;
+
+    .goods-list {
+
+      a {
+        display: inline-block;
+        padding: 15px;
+        color: #666;
+
+        &:hover {
+          .transition();
+
+          text-decoration: none;
+          color: #a3c31d;
+        }
+      }
+    }
   }
 }
 
@@ -385,12 +396,52 @@ img {
 
 /*partner 样式*/
 .partner {
-  height: 453px;
-  padding-top: 60px;
+  padding: 60px 0;
+
+  img {
+    margin: 0 auto;
+  }
 }
 
 /*fooer 样式*/
 .footer {
-  height: 335px;
+  width: 100%;
+  padding: 50px 0;
+  color: #b0b0b0;
   background-color: #323335;
+
+  a {
+    display: inline-block;
+    color: #b0b0b0;
+    text-decoration: none;
+
+    &:hover {
+      .transition();
+
+      color: #a3c31d;
+    }
+  }
+
+  .footer-link {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #444547;
+
+    a {
+      padding: 0 12px;
+    }
+  }
+
+  .footer-des {
+    padding: 50px 0 20px 0;
+    border-bottom: 0;
+
+    a {
+      padding: 0 12px;
+
+      &:nth-of-type(1) {
+        padding-left: 0;
+      }
+    }
+  }
+
 }
