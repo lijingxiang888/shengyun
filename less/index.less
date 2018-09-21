@@ -10,50 +10,78 @@ h2 {
   font-weight: bold;
 }
 
-/*头部样式*/
-.header {
-  position: absolute;
-  left: 50%;
-  margin-left: -585px;
-  padding-top: 15px;
-  z-index: 100;
+/*导航样式*/
+.navbar {
 
-  .navbar {
-    a {
-      color: #fff;
+  a {
+    color: #fff;
 
-      &.navbar-brand {
-        font-size: 30px;
-        font-weight: bolder;
-      }
-    }
+    &.navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
 
-    .dropdown-menu {
-      background: none;
-
-      li {
-        margin-bottom: 2px;
-        background-color: #eee;
-
-        &:hover {
-          .transition();
-          background-color: #A3C31D;
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        & {
+          padding: 15px 6px;
+          font-size: 18px;
+          font-weight: normal;
         }
-
-        a {
-          padding: 10px 15px;
-          color: #5e5e5e;
-          background: none;
-
-          &:hover {
-            color: #fff;
-          }
-
+      }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        & {
+          padding: 15px 6px;
+          font-size: 16px;
+          font-weight: normal;
         }
       }
     }
   }
 
+  .nav {
+
+    > li {
+
+      > a {
+        @media all and (min-width: 992px){
+          & {
+            padding: 15px 6px;
+          }
+        }
+
+        @media all and (min-width: 320px) and (max-width: 991px){
+          & {
+            padding: 15px 7px;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: none;
+
+        li {
+          margin-bottom: 2px;
+          background-color: #eee;
+
+          &:hover {
+            .transition();
+            background-color: #A3C31D;
+          }
+
+          a {
+            padding: 10px 15px;
+            color: #5e5e5e;
+            background: none;
+
+            &:hover {
+              color: #fff;
+            }
+
+          }
+        }
+      }
+    }
+
+  }
 }
 
 /*tab样式*/
@@ -61,9 +89,21 @@ h2 {
   margin-top: 50px;
   border: none;
 
+  @media all and (min-width: 320px) and (max-width: 991px) {
+    & {
+      margin-top: 20px;
+    }
+  }
+
   li {
     height: 120px;
     text-align: center;
+
+    @media all and (min-width: 320px) and (max-width: 991px) {
+      & {
+        height: auto;
+      }
+    }
 
     &.active {
 
@@ -102,6 +142,28 @@ h2 {
       border: none;
       border-bottom: 2px solid #ccc;
       background-color: #eee;
+
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        & {
+          height: 60px;
+          line-height: 40px;
+          margin-bottom: 10px;
+          font-size: 16px;
+          border: 1px solid #e5e5e5;
+          background: none;
+        }
+      }
+
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        & {
+          height: 40px;
+          line-height: 20px;
+          margin-bottom: 10px;
+          font-size: 14px;
+          border: 1px solid #e5e5e5;
+          background: none;
+        }
+      }
 
       .brand-icon {
         width: 70px;
@@ -167,25 +229,99 @@ h2 {
 
 /*about样式*/
 .about {
-  height: 417px;
   margin-top: 60px;
+  margin-bottom: 60px;
   padding: 6px 0;
   background-color: #f5f5f5;
   overflow: hidden;
+
+  @media all and (min-width: 320px) and (max-width: 991px) {
+    & {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 
   .row {
     height: 100%;
     padding: 15px 0;
     background-color: #fff;
 
-    .about-title:before {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      background-color: #155683;
-      left: 16px;
-      top: 50px;
+    .about-pic {
+
+      img {
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      p {
+        font-size: 36px;
+        font-weight: bold;
+        color: #ccc;
+
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            font-size: 26px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .about-title {
+
+      @media all and (min-width: 320px) and (max-width: 991px) {
+        & {
+
+        }
+      }
+
+      h2 {
+        margin-top: 0;
+
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            margin: 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      > p {
+        margin-top: 44px;
+        line-height: 2em;
+        text-indent: 2em;
+        text-align: justify;
+
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            margin: 20px;
+
+            & + div {
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #155683;
+        left: 16px;
+        top: 50px;
+
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
@@ -196,23 +332,38 @@ h2 {
 
   .team-show {
 
-      height: 163px;
-      overflow: hidden;
+    .team-title {
+      margin-top: 0;
 
-    .team-title:before {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      background-color: #155683;
-      left: 16px;
-      top: 70px;
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        & {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #155683;
+        left: 16px;
+        top: 70px;
+
+        @media all and (min-width: 320px) and (max-width: 767px) {
+          & {
+            display: none;
+          }
+        }
+      }
     }
 
     .team-des {
       margin-top: 40px;
       color: #666;
     }
+
     .team-num {
       height: 100%;
 
@@ -226,10 +377,27 @@ h2 {
             height: 136px;
             background-color: #eee;
 
+            @media all and (max-width: 767px) {
+              height: 82px;
+              margin-bottom: 5px;
+            }
+
             strong {
               padding: 0 6px;
               font-size: 66px;
               color: #155683;
+
+              @media all and (min-width: 768px) and (max-width: 1199px) {
+                & {
+                  font-size: 50px;
+                }
+              }
+
+              @media all and (max-width: 767px) {
+                & {
+                  font-size: 30px;
+                }
+              }
             }
 
             span {
@@ -237,8 +405,23 @@ h2 {
               right: 0;
               top: 0;
               font-size: 40px;
-              color: rgb(161,197,30);
+              color: rgb(161, 197, 30);
               vertical-align: top;
+            }
+          }
+        }
+        .per {
+          margin-right: 0;
+
+          span {
+            left: 42%;
+            top: 22%;
+
+            @media all and (min-width: 992px) and (max-width: 1200px) {
+              /*宽度大于992px*/
+              & {
+                top: 7%;
+              }
             }
           }
         }
@@ -251,33 +434,38 @@ h2 {
     height: 833px;
     margin-top: 60px;
     background: url("../images/team-bg.jpg") no-repeat center;
-    //background-position-x: -10px;
+
+    @media all and (min-width: 320px) and (max-width: 991px) {
+      height: auto;
+      margin-bottom: 20px;
+      background: none;
+    }
 
     .single {
       padding-top: 76px;
 
-        [class^="col-md-"] {
-          padding: 0 5px;
+      [class^="col-md-"] {
+        padding: 0 5px;
 
-          &:nth-of-type(1) {
-            margin-top: 90px;
-          }
-          &:nth-of-type(2) {
-            margin-top: 30px;
-          }
-          &:nth-of-type(3) {
-            margin-top: 70px;
-          }
-          &:nth-of-type(4) {
-            margin-top: -10px;
-          }
-          &:nth-of-type(5) {
-             margin-top: 120px;
-           }
-          &:nth-of-type(6) {
-            margin-top: 40px;
-          }
+        &:nth-of-type(1) {
+          margin-top: 90px;
         }
+        &:nth-of-type(2) {
+          margin-top: 30px;
+        }
+        &:nth-of-type(3) {
+          margin-top: 70px;
+        }
+        &:nth-of-type(4) {
+          margin-top: -10px;
+        }
+        &:nth-of-type(5) {
+          margin-top: 120px;
+        }
+        &:nth-of-type(6) {
+          margin-top: 40px;
+        }
+      }
     }
 
     .group {
@@ -299,7 +487,7 @@ h2 {
   .team-more {
     width: 250px;
     height: 46px;
-    line-height:46px;
+    line-height: 46px;
     margin: 0 auto;
     text-align: center;
     border: 1px solid #ccc;
@@ -327,6 +515,15 @@ h2 {
 
 /*news样式*/
 .news {
+
+  h2 {
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      & {
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+  }
 
   .carousel {
 
@@ -361,9 +558,16 @@ h2 {
   .newsTab {
     margin-top: 63px;
 
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      & {
+        margin-top: 30px;
+      }
+    }
+
     .tab-content {
 
       ul {
+        padding-left: 0;
         list-style: none;
 
         li {
@@ -373,6 +577,10 @@ h2 {
 
           .glyphicon {
             font-size: 12px;
+
+            @media all and (min-width: 320px) and (max-width: 991px) {
+              display: none;
+            }
           }
 
           a {
@@ -397,6 +605,21 @@ h2 {
 /*partner 样式*/
 .partner {
   padding: 60px 0;
+
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    & {
+      padding: 30px 0;
+    }
+  }
+
+  h2 {
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      & {
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+  }
 
   img {
     margin: 0 auto;
@@ -428,6 +651,12 @@ h2 {
 
     a {
       padding: 0 12px;
+
+      @media all and (min-width: 992px) and (max-width: 1200px) {
+        & {
+          padding: 0 6px;
+        }
+      }
     }
   }
 
