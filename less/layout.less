@@ -1,5 +1,9 @@
 @import "common";
 
+ul,ol {
+  list-style: none;
+}
+
 .banner {
   position: relative;
   left: 0;
@@ -9,11 +13,165 @@
 
   img {
     @media all and (min-width: 320px) and (max-width: 767px) {
-      height: 250px;
+      height: 194px;
     }
   }
 }
 /*专业团队 样式*/
+.team {
+  margin-bottom: 40px;
+
+  .boss {
+    .show-des {
+      margin-top: 5px;
+      background-color: rgb(27,39,51);
+      .avatar {
+        margin: 10px 0;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      .show-txt {
+        padding: 0;
+        font-size: 12px;
+        color: #fff;
+
+        p {
+          margin: 0;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  .staff {
+    margin-top: 10px;
+
+    .show-des {
+      margin-top: 5px;
+      background-color: rgb(27,39,51);
+      .avatar {
+        margin: 10px 0;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      .show-txt {
+        padding: 0;
+        font-size: 12px;
+        color: #fff;
+
+        p {
+          margin: 0;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}
+
+/*关于我们*/
+.about {
+
+  .about-des {
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    p {
+      color: #666;
+      line-height: 2em;
+    }
+  }
+
+  .about-num {
+
+    margin-bottom: 50px;
+    .num-item {
+      position: relative;
+
+      strong {
+        display: block;
+        font-family: SimSun;
+        font-size: 80px;
+        color: #a3c31d;
+        text-align: center;
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        width: 24px;
+        height: 25px;
+        //background: url("../images/baseIcon.png") no-repeat center; bug
+        //background-size: 1472px 900px;
+        //background-position: 100px 100px;
+        //z-index: 100;
+      }
+
+      p {
+        color: #666;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*诚聘英才*/
+.job {
+  margin-top: 30px;
+  margin-bottom: 70px;
+
+  .job-item {
+    margin-right: 10px;
+    padding: 0 26px 26px 26px;
+    background-color: #f9f9f9;
 
 
+    &:hover {
+      .transition();
+
+      box-shadow: 0 3px 8px rgba(0,0,0,.16);
+
+      button {
+        .transition();
+
+        background-color: #a3c31d;
+      }
+    }
+
+    .job-name {
+      padding: 15px 0;
+      color: #155683;
+      text-align: center;
+      border-bottom: 1px solid #8c8c8c;
+    }
+
+    p {
+      padding: 10px 0;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+      background-color: #8a97a1;
+    }
+  }
+}
+
+/*新闻中心样式*/
+.news {
+  margin-top: 30px;
+
+
+}
 
