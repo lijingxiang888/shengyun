@@ -1,0 +1,139 @@
+
+/*过渡动画*/
+.transition(@property:all;@duration:.3s;@function:linear;@delay:0s;) {
+  -webkit-transition: @property @duration @function @delay;
+  -moz-transition: @property @duration @function @delay;
+  -ms-transition: @property @duration @function @delay;
+  -o-transition: @property @duration @function @delay;
+  transition: @property @duration @function @delay;
+}
+
+/*导航样式*/
+.navbar {
+  margin-bottom: 0;
+
+  a {
+    color: #fff;
+
+    &.navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        & {
+          padding: 15px 6px;
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        & {
+          padding: 15px 6px;
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .nav {
+
+    > li {
+
+      > a {
+        @media all and (min-width: 992px){
+          & {
+            padding: 15px 6px;
+          }
+        }
+
+        @media all and (min-width: 320px) and (max-width: 991px){
+          & {
+            padding: 15px 7px;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: none;
+
+        li {
+          margin-bottom: 2px;
+          background-color: #eee;
+
+          &:hover {
+            .transition();
+            background-color: #A3C31D;
+          }
+
+          a {
+            padding: 10px 15px;
+            color: #5e5e5e;
+            background: none;
+
+            &:hover {
+              color: #fff;
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*fooer 样式*/
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  color: #b0b0b0;
+  background-color: #323335;
+
+  a {
+    display: inline-block;
+    color: #b0b0b0;
+    text-decoration: none;
+
+    &:hover {
+      .transition();
+
+      color: #a3c31d;
+    }
+  }
+
+  .footer-link {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #444547;
+
+    a {
+      padding: 0 12px;
+
+      @media all and (min-width: 992px) and (max-width: 1200px) {
+        & {
+          padding: 0 6px;
+        }
+      }
+    }
+  }
+
+  .footer-des {
+    padding: 50px 0 20px 0;
+    border-bottom: 0;
+
+    a {
+      padding: 0 12px;
+
+      &:nth-of-type(1) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .row {
+    @media all and (min-width: 320px) and (max-width: 991px) {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}

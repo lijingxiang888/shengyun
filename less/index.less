@@ -1,86 +1,19 @@
-.transition(@property:all;@duration:.3s;@function:linear;@delay:0s;) {
-  -webkit-transition: @property @duration @function @delay;
-  -moz-transition: @property @duration @function @delay;
-  -ms-transition: @property @duration @function @delay;
-  -o-transition: @property @duration @function @delay;
-  transition: @property @duration @function @delay;
-}
+@import "common";
 
 h2 {
   font-weight: bold;
 }
 
-/*导航样式*/
-.navbar {
+/*banner样式*/
+.banner {
 
-  a {
-    color: #fff;
+  .carousel-inner {
 
-    &.navbar-brand {
-      font-size: 30px;
-      font-weight: bold;
-
-      @media all and (min-width: 768px) and (max-width: 991px) {
-        & {
-          padding: 15px 6px;
-          font-size: 18px;
-          font-weight: normal;
-        }
-      }
+    img {
       @media all and (min-width: 320px) and (max-width: 767px) {
-        & {
-          padding: 15px 6px;
-          font-size: 16px;
-          font-weight: normal;
-        }
+        height: 250px;
       }
     }
-  }
-
-  .nav {
-
-    > li {
-
-      > a {
-        @media all and (min-width: 992px){
-          & {
-            padding: 15px 6px;
-          }
-        }
-
-        @media all and (min-width: 320px) and (max-width: 991px){
-          & {
-            padding: 15px 7px;
-          }
-        }
-      }
-
-      .dropdown-menu {
-        background: none;
-
-        li {
-          margin-bottom: 2px;
-          background-color: #eee;
-
-          &:hover {
-            .transition();
-            background-color: #A3C31D;
-          }
-
-          a {
-            padding: 10px 15px;
-            color: #5e5e5e;
-            background: none;
-
-            &:hover {
-              color: #fff;
-            }
-
-          }
-        }
-      }
-    }
-
   }
 }
 
@@ -362,6 +295,7 @@ h2 {
     .team-des {
       margin-top: 40px;
       color: #666;
+      text-indent: 2em;
     }
 
     .team-num {
@@ -407,20 +341,39 @@ h2 {
               font-size: 40px;
               color: rgb(161, 197, 30);
               vertical-align: top;
+
+              @media all and (min-width: 320px) and (max-width: 767px) {
+                left: 76px;
+                top: -14px;
+              }
             }
           }
         }
         .per {
           margin-right: 0;
 
-          span {
+          span.per-num {
             left: 42%;
             top: 22%;
 
             @media all and (min-width: 992px) and (max-width: 1200px) {
-              /*宽度大于992px*/
               & {
                 top: 7%;
+              }
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              & {
+                top: 8px;
+              }
+            }
+
+            @media all and (min-width: 320px) and (max-width: 767px) {
+              & {
+                top: 0;
+                left: 40px;
+                font-size: 30px;
+
               }
             }
           }
@@ -477,8 +430,22 @@ h2 {
           margin-top: 30px;
         }
 
+        &:nth-of-type(2) {
+          @media all and (min-width: 320px) and (max-width: 767px) {
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+
         &:nth-of-type(3) {
           margin-top: 40px;
+
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            margin-top: 0;
+          }
         }
       }
     }
@@ -492,6 +459,13 @@ h2 {
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 50px;
+
+    @media all and (min-width: 320px) and (max-width: 991px) {
+      width: 100%;
+      height: 34px;
+      background-color: #8a97a0;
+      border-radius: 4px;
+    }
 
     &:hover {
       .transition();
@@ -508,6 +482,13 @@ h2 {
       display: block;
       border-radius: 50px;
       text-decoration: none;
+      @media all and (min-width: 320px) and (max-width: 991px) {
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        color: #fff;
+      }
+
     }
   }
 
@@ -591,10 +572,24 @@ h2 {
             text-overflow: ellipsis;
             white-space: nowrap;
             vertical-align: top;
+
+            @media all and (min-width: 375px) and (max-width: 767px) {
+              width: 270px;
+              font-size: 12px;
+            }
+
+            @media all and (min-width: 320px) and (max-width: 374px) {
+              width: 218px;
+              font-size: 12px;
+            }
           }
 
           time {
             color: #999;
+
+            @media all and (min-width: 320px) and (max-width: 767px) {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -624,53 +619,4 @@ h2 {
   img {
     margin: 0 auto;
   }
-}
-
-/*fooer 样式*/
-.footer {
-  width: 100%;
-  padding: 50px 0;
-  color: #b0b0b0;
-  background-color: #323335;
-
-  a {
-    display: inline-block;
-    color: #b0b0b0;
-    text-decoration: none;
-
-    &:hover {
-      .transition();
-
-      color: #a3c31d;
-    }
-  }
-
-  .footer-link {
-    padding-bottom: 50px;
-    border-bottom: 1px solid #444547;
-
-    a {
-      padding: 0 12px;
-
-      @media all and (min-width: 992px) and (max-width: 1200px) {
-        & {
-          padding: 0 6px;
-        }
-      }
-    }
-  }
-
-  .footer-des {
-    padding: 50px 0 20px 0;
-    border-bottom: 0;
-
-    a {
-      padding: 0 12px;
-
-      &:nth-of-type(1) {
-        padding-left: 0;
-      }
-    }
-  }
-
 }
