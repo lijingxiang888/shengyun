@@ -25,6 +25,15 @@
     <script src="less/less-2.5.3.min.js"></script>
 </head>
 <body>
+<!--[if lte IE 8]>
+<div class="point">
+    <p style="text-align: center;font-size: 30px">
+        您正在使用一个<strong>过时</strong>的浏览器。请
+        <a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，
+        以提高您的体验。
+    </p>
+</div>
+<![endif]-->
 <!--nav begin-->
 <nav class="navbar navbar-default">
     <div class="container">
@@ -49,11 +58,11 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
+                    <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">商标注册</a></li>
                         <li><a href="#">专利代理</a></li>
-                        <li><a href="#">版权</a></li>
+                        <li><a href="#">版权服务</a></li>
                         <li><a href="#">创新服务</a></li>
                         <li><a href="#">企业服务</a></li>
                         <li><a href="#">税务服务</a></li>
@@ -62,19 +71,13 @@
                 </li>
                 <li><a href="team.html">专业团队</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
+                    <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="news.html">最新动态</a></li>
                         <li><a href="news.html">行业动态</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">联系方式</a></li>
-                        <li><a href="#">服务网络</a></li>
-                    </ul>
-                </li>
+                <li><a href="contact.html">联系我们</a></li>
             </ul>
         </div>
     </div>
@@ -83,7 +86,7 @@
 
 <!--banner begin-->
 <div class="banner container-fluid">
-    <img class="img-responsive" src="images/layout-banner.jpg" alt="">
+    <img class="img-responsive" src="images/about-banner.jpg" alt="">
 </div>
 <!--banner end-->
 
@@ -91,7 +94,7 @@
 <div class="about container">
     <div class="about-des row">
         <div class="col-md-5">
-            <img class="img-responsive" src="images/test3.jpg" alt="">
+            <img class="img-responsive" src="images/team-group1.jpg" alt="">
         </div>
         <div class="col-md-7">
             <p>
@@ -105,28 +108,28 @@
             </p>
         </div>
     </div>
-    <div class="about-num col-md-3">
+    <div class="about-num col-md-3 col-sm-3 hidden-xs">
         <div class="num-item">
             <strong>110</strong>
             <span></span>
             <p>110余名专业人士的团队</p>
         </div>
     </div>
-    <div class="about-num col-md-3">
+    <div class="about-num col-md-3 col-sm-3 hidden-xs">
         <div class="num-item">
             <strong>1000</strong>
             <span></span>
             <p>服务企业达1000多家 </p>
         </div>
     </div>
-    <div class="about-num col-md-3">
+    <div class="about-num col-md-3 col-sm-3 hidden-xs">
         <div class="num-item">
             <strong>5000</strong>
             <span></span>
             <p>年知识产权代理量超过五千余件 </p>
         </div>
     </div>
-    <div class="about-num col-md-3">
+    <div class="about-num col-md-3 col-sm-3 hidden-xs">
         <div class="num-item">
             <strong>90</strong>
             <span></span>
@@ -156,15 +159,15 @@
         <div class="footer-des hidden-xs hidden-sm">
             <a href="index.html">首页</a>
             |
-            <a href="javascript:;">关于我们</a>
+            <a href="about.html">关于我们</a>
             |
-            <a href="javascript:;">知识产权代理</a>
+            <a href="server.html">知识产权代理</a>
             |
-            <a href="javascript:;">专业团队</a>
+            <a href="team.html">专业团队</a>
             |
-            <a href="javascript:;">荣誉资质</a>
+            <a href="news.html">新闻中心</a>
             |
-            <a href="javascript:;">联系我们</a>
+            <a href="contact.html">联系我们</a>
         </div>
         <div class="row">
             <div class="col-md-11 col-sm-12 col-xs-12">
@@ -193,5 +196,6 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/href.js"></script>
 </body>
 </html>
