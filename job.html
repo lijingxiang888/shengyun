@@ -25,6 +25,15 @@
     <script src="less/less-2.5.3.min.js"></script>
 </head>
 <body>
+<!--[if lte IE 8]>
+<div class="point">
+    <p style="text-align: center;font-size: 30px">
+        您正在使用一个<strong>过时</strong>的浏览器。请
+        <a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，
+        以提高您的体验。
+    </p>
+</div>
+<![endif]-->
 <!--nav begin-->
 <nav class="navbar navbar-default">
     <div class="container">
@@ -49,11 +58,11 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
+                    <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">商标注册</a></li>
                         <li><a href="#">专利代理</a></li>
-                        <li><a href="#">版权</a></li>
+                        <li><a href="#">版权服务</a></li>
                         <li><a href="#">创新服务</a></li>
                         <li><a href="#">企业服务</a></li>
                         <li><a href="#">税务服务</a></li>
@@ -62,19 +71,13 @@
                 </li>
                 <li><a href="team.html">专业团队</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
+                    <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="news.html">最新动态</a></li>
                         <li><a href="news.html">行业动态</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">联系方式</a></li>
-                        <li><a href="#">服务网络</a></li>
-                    </ul>
-                </li>
+                <li><a href="contact.html">联系我们</a></li>
             </ul>
         </div>
     </div>
@@ -83,40 +86,40 @@
 
 <!--banner begin-->
 <div class="banner container-fluid">
-    <img class="img-responsive" src="images/layout-banner.jpg" alt="">
+    <img class="img-responsive" src="images/job-banner.jpg" alt="">
 </div>
 <!--banner end-->
 
 <!--job begin-->
 <div class="job container">
     <div class="row">
-        <div class="job-item col-md-3">
-            <h4 class="job-name">专利代理人</h4>
+        <!--<div class="job-item col-md-3 col-sm-3 col-xs-12">-->
+            <!--<h4 class="job-name">总经理助理</h4>-->
+            <!--<p>招聘人数：1</p>-->
+            <!--<p>从业经验：三年以上总助经验</p>-->
+            <!--<p>学历：本科及以上</p>-->
+            <!--<button type="button" data-toggle="modal" data-target="#myModal1">查看详情</button>-->
+        <!--</div>-->
+        <div class="job-item col-md-3 col-sm-3 col-xs-12">
+            <h4 class="job-name">销售</h4>
             <p>招聘人数：若干</p>
-            <p>从业经验</p>
-            <p>学历：本科及以上</p>
-            <button type="button">查看详情</button>
+            <p>从业经验：一年以上销售工作经验</p>
+            <p>学历：专科及以上</p>
+            <button type="button" data-toggle="modal" data-target="#myModal2">查看详情</button>
         </div>
-        <div class="job-item col-md-3">
-            <h4 class="job-name">专利代理人</h4>
+        <div class="job-item col-md-3 col-sm-3 col-xs-12">
+            <h4 class="job-name">业务员</h4>
             <p>招聘人数：若干</p>
-            <p>从业经验</p>
-            <p>学历：本科及以上</p>
-            <button type="button">查看详情</button>
+            <p>从业经验：一年以上工作经验</p>
+            <p>学历：专科及以上</p>
+            <button type="button" data-toggle="modal" data-target="#myModal3">查看详情</button>
         </div>
-        <div class="job-item col-md-3">
-            <h4 class="job-name">专利代理人</h4>
+        <div class="job-item col-md-3 col-sm-3 col-xs-12">
+            <h4 class="job-name">客服</h4>
             <p>招聘人数：若干</p>
-            <p>从业经验</p>
-            <p>学历：本科及以上</p>
-            <button type="button">查看详情</button>
-        </div>
-        <div class="job-item col-md-3">
-            <h4 class="job-name">专利代理人</h4>
-            <p>招聘人数：若干</p>
-            <p>从业经验</p>
-            <p>学历：本科及以上</p>
-            <button type="button">查看详情</button>
+            <p>从业经验：一年以上客服工作经验</p>
+            <p>学历：专科及以上</p>
+            <button type="button" data-toggle="modal" data-target="#myModal4">查看详情</button>
         </div>
     </div>
 </div>
@@ -142,15 +145,15 @@
         <div class="footer-des hidden-xs hidden-sm">
             <a href="index.html">首页</a>
             |
-            <a href="javascript:;">关于我们</a>
+            <a href="about.html">关于我们</a>
             |
-            <a href="javascript:;">知识产权代理</a>
+            <a href="server.html">知识产权代理</a>
             |
-            <a href="javascript:;">专业团队</a>
+            <a href="team.html">专业团队</a>
             |
-            <a href="javascript:;">荣誉资质</a>
+            <a href="news.html">新闻中心</a>
             |
-            <a href="javascript:;">联系我们</a>
+            <a href="contact.html">联系我们</a>
         </div>
         <div class="row">
             <div class="col-md-11 col-sm-12 col-xs-12">
@@ -176,8 +179,130 @@
 </div>
 <!--footer end-->
 
+<!--模态框1 begin-->
+<!--<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                <!--<h4 class="modal-title">总经理助理</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<h5 style="font-weight: bold">职位描述</h5>-->
+                <!--<p>1.负责陪同总经理出差</p>-->
+                <!--<h5 style="font-weight: bold">职位要求</h5>-->
+                <!--<p>1.公关、行政管理、企业管理等相关专业本科学历及以上</p>-->
+                <!--<p>2.三年以上总经理助理工作经验，有本领域工作经验者优先</p>-->
+                <!--<p>3.知识结构全面，具有丰富的管理经验，了解法律及财务方面知识，能够迅速掌握与本公司业务有关的各种知识</p>-->
+                <!--<h5 style="font-weight: bold">薪资</h5>-->
+                <!--<p>面议，早八晚五，双休五险</p>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
+            <!--</div>-->
+        <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.modal &ndash;&gt;-->
+<!--</div>-->
+<!--模态框1 end-->
+
+<!--模态框2 begin-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">销售</h4>
+            </div>
+            <div class="modal-body">
+                <h5 style="font-weight: bold">职位描述</h5>
+                <p>1、负责搜集新客户的资料并进行沟通，开发新客户；</p>
+                <p>2、通过电话与客户进行有效沟通了解客户需求, 寻找销售机会并完成销售业绩；</p>
+                <p>3、维护老客户的业务，挖掘客户的最大潜力；</p>
+                <p>4、定期与合作客户进行沟通，建立良好的长期合作关系。</p>
+                <h5 style="font-weight: bold">职位要求</h5>
+                <p>1.专科及以上学历，市场营销等相关专业；</p>
+                <p>2.一年以上网络销售工作经验，具有网络销售渠道者优先；</p>
+                <p>3.精通各种网络技巧；</p>
+                <p>4.熟悉互联网，熟悉使用网络交流工具和各种办公软件；</p>
+                <p>5.有较强的沟通能力；</p>
+                <h5 style="font-weight: bold">薪资</h5>
+                <p>3000-8000，早八晚五，双休五险</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--模态框2 end-->
+
+<!--模态框3 begin-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">业务员</h4>
+            </div>
+            <div class="modal-body">
+                <h5 style="font-weight: bold">职位描述</h5>
+                <p>1、负责搜集新客户的资料并进行沟通，开发新客户；</p>
+                <p>2、通过电话与客户进行有效沟通了解客户需求, 寻找销售机会并完成销售业绩；</p>
+                <p>3、维护老客户的业务，挖掘客户的最大潜力；</p>
+                <p>4、定期与合作客户进行沟通，建立良好的长期合作关系。</p>
+                <p>5、有驾照，会开车，能短期出差。</p>
+                <h5 style="font-weight: bold">职位要求</h5>
+                <p>1.20-30岁，口齿伶俐，普通话流利，语音富有感染力；</p>
+                <p>2.对销售工作有较高的热情</p>
+                <p>3.具备较强的学习能力和优秀的沟通能力</p>
+                <p>4.性格坚韧，思维敏捷，具备良好的应变能力和抗压能力</p>
+                <p>5.有敏锐的市场洞察力，有强烈的事业心、责任心和积极的工作态度，有相关电话销售经验者优先</p>
+                <h5 style="font-weight: bold">薪资</h5>
+                <p>3000-过万，早八晚五，双休五险</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--模态框3 end-->
+
+<!--模态框4 begin-->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">客服</h4>
+            </div>
+            <div class="modal-body">
+                <h5 style="font-weight: bold">职位描述</h5>
+                <p>1、负责搜集新客户的资料并进行沟通，开发新客户；</p>
+                <p>2、通过电话与客户进行有效沟通了解客户需求, 寻找销售机会并完成销售业绩；</p>
+                <p>3、维护老客户的业务，挖掘客户的最大潜力；</p>
+                <p>4、定期与合作客户进行沟通，建立良好的长期合作关系。</p>
+                <h5 style="font-weight: bold">职位要求</h5>
+                <p>1、20-30岁，口齿清晰，普通话流利，语音富有感染力；</p>
+                <p>2、对销售工作有较高的热情；</p>
+                <p>3、具备较强的学习能力和优秀的沟通能力；</p>
+                <p>4、性格坚韧，思维敏捷，具备良好的应变能力和承压能力；</p>
+                <p>5、有敏锐的市场洞察力，有强烈的事业心、责任心和积极的工作态度，有相关电话销售工作经验者优先。
+                </p>
+                <h5 style="font-weight: bold">薪资</h5>
+                <p>3000-5000，早八晚五，双休五险</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--模态框4 end-->
+
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/href.js"></script>
 </body>
 </html>

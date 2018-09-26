@@ -17,6 +17,7 @@ ul,ol {
     }
   }
 }
+
 /*专业团队 样式*/
 .team {
   margin-bottom: 40px;
@@ -81,9 +82,19 @@ ul,ol {
     margin-top: 70px;
     margin-bottom: 40px;
 
+    @media all and (min-width: 320px) and (max-width: 991px) {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
     p {
       color: #666;
       line-height: 2em;
+
+      @media all and (min-width: 320px) and (max-width: 991px) {
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -99,6 +110,10 @@ ul,ol {
         font-size: 80px;
         color: #a3c31d;
         text-align: center;
+
+        @media all and (min-width: 768px) and (max-width: 991px) {
+          font-size: 60px;
+        }
       }
 
       span {
@@ -108,10 +123,6 @@ ul,ol {
         display: inline-block;
         width: 24px;
         height: 25px;
-        //background: url("../images/baseIcon.png") no-repeat center; bug
-        //background-size: 1472px 900px;
-        //background-position: 100px 100px;
-        //z-index: 100;
       }
 
       p {
@@ -132,6 +143,13 @@ ul,ol {
     padding: 0 26px 26px 26px;
     background-color: #f9f9f9;
 
+    @media all and (min-width: 768px)  {
+        width: 23%;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
 
     &:hover {
       .transition();
@@ -168,10 +186,65 @@ ul,ol {
   }
 }
 
+/*知识产权代理*/
+.server {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  #serverTabs {
+
+    li {
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+    }
+  }
+
+  #serverContent {
+
+    .tab-pane {
+
+      .server-itemName {
+        padding: 10px 30px;
+        border: 1px solid #e5e5e5;
+        border-left: 4px solid #155683;
+        background-color: #f9f9f9;
+
+        .server-title {
+          margin-top: 0;
+
+        }
+      }
+
+      .server-content {
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}
+
 /*新闻中心样式*/
 .news {
   margin-top: 30px;
 
 
+}
+
+/*联系我们 样式*/
+.contact {
+  margin-top: 50px;
+
+  [class^='col-md-'] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.map {
+  height: 500px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
