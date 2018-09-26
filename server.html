@@ -59,7 +59,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="server-menu">
                         <li><a href="#">商标注册</a></li>
                         <li><a href="#">专利代理</a></li>
                         <li><a href="#">版权服务</a></li>
@@ -72,9 +72,9 @@
                 <li><a href="team.html">专业团队</a></li>
                 <li class="dropdown">
                     <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="news.html">最新动态</a></li>
-                        <li><a href="news.html">行业动态</a></li>
+                    <ul class="dropdown-menu" id="news-menu">
+                        <li><a href="javascript:;">最新动态</a></li>
+                        <li><a href="javascript:;">行业动态</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">联系我们</a></li>
@@ -93,42 +93,352 @@
 <!--server begin-->
 <div class="server container">
     <div class="row">
-        <ul id="serverTabs" class="nav nav-pills nav-stacked col-md-2" role="tablist">
-            <li role="presentation" class=""><a href="#brand" id="brand-tab" role="tab" data-toggle="tab" aria-controls="brand" aria-expanded="false">商标注册</a></li>
-            <li role="presentation" class="active"><a href="#patent" role="tab" id="patent-tab" data-toggle="tab" aria-controls="patent" aria-expanded="true">专利代理</a></li>
-            <li role="presentation" class="active"><a href="#copyright" role="tab" id="copyright-tab" data-toggle="tab" aria-controls="copyright" aria-expanded="true">版权服务</a></li>
-            <li role="presentation" class="active"><a href="#innovation" role="tab" id="innovation-tab" data-toggle="tab" aria-controls="innovation" aria-expanded="true">创新服务</a></li>
-            <li role="presentation" class="active"><a href="#company" role="tab" id="company-tab" data-toggle="tab" aria-controls="company" aria-expanded="true">企业服务</a></li>
-            <li role="presentation" class="active"><a href="#tax" role="tab" id="tax-tab" data-toggle="tab" aria-controls="tax" aria-expanded="true">税务服务</a></li>
-            <li role="presentation" class="active"><a href="#law" role="tab" id="law-tab" data-toggle="tab" aria-controls="law" aria-expanded="true">法律服务</a></li>
+        <ul id="serverTabs" class="nav nav-pills nav-stacked col-xs-12 col-sm-2 col-md-2" role="tablist">
+            <li role="presentation" class="active"><a href="#brand" id="brand-tab" role="tab" data-toggle="tab" aria-controls="brand" aria-expanded="false">商标注册</a></li>
+            <li role="presentation"><a href="#patent" role="tab" id="patent-tab" data-toggle="tab" aria-controls="patent" aria-expanded="true">专利代理</a></li>
+            <li role="presentation"><a href="#copyright" role="tab" id="copyright-tab" data-toggle="tab" aria-controls="copyright" aria-expanded="true">版权服务</a></li>
+            <li role="presentation"><a href="#innovation" role="tab" id="innovation-tab" data-toggle="tab" aria-controls="innovation" aria-expanded="true">创新服务</a></li>
+            <li role="presentation"><a href="#company" role="tab" id="company-tab" data-toggle="tab" aria-controls="company" aria-expanded="true">企业服务</a></li>
+            <li role="presentation"><a href="#tax" role="tab" id="tax-tab" data-toggle="tab" aria-controls="tax" aria-expanded="true">税务服务</a></li>
+            <li role="presentation"><a href="#law" role="tab" id="law-tab" data-toggle="tab" aria-controls="law" aria-expanded="true">法律服务</a></li>
         </ul>
-        <div id="serverContent" class="tab-content col-md-10">
+        <div id="serverContent" class="tab-content col-xs-12 col-sm-10 col-md-10">
             <div role="tabpanel" class="tab-pane fade" id="brand" aria-labelledby="brand-tab">
-                <div class="server-itemName">
+                <div class="server-itemName hidden-xs">
                     <h2 class="server-title">商标注册</h2>
                     <small>TRADEMARK REGISTRATION</small>
                 </div>
                 <div class="server-content">
-                    <h4>服务内容</h4>
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标注册</h4>
+                            <small class="hidden-xs">享有专有权，企业无形资产</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标复审</h4>
+                            <small class="hidden-xs">增加成功机会，放弃意味失败</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标变通加急</h4>
+                            <small class="hidden-xs">快速获得证书，企业无形资产</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>国际商标</h4>
+                            <small class="hidden-xs">拓展国际市场，保护自身品牌</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>集体商标注册</h4>
+                            <small class="hidden-xs">共创集体信誉，集中优势力量</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>证明商标注册</h4>
+                            <small class="hidden-xs">享有专有权，企业无形资产</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>申请商标更正</h4>
+                            <small class="hidden-xs">提高企业声誉，树立产品形象</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标加急注册</h4>
+                            <small class="hidden-xs">增加成功机会，快速获得证书</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标注册证明</h4>
+                            <small class="hidden-xs">等同原证使用，替代原件展示</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标异议</h4>
+                            <small class="hidden-xs">重保护注册利益，获取专用权</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标设计</h4>
+                            <small class="hidden-xs">树立企业形象，无形的资产</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标续展</h4>
+                            <small class="hidden-xs">持续使用，防止抢注</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>注销商标</h4>
+                            <small class="hidden-xs">节约时间，维护权益</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标深度查询</h4>
+                            <small class="hidden-xs">增加成功机会，放弃意味失败</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标质押评估</h4>
+                            <small class="hidden-xs">无形的资产，利于企业发展</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>著名驰名商标</h4>
+                            <small class="hidden-xs">增加成功机会，放弃意味失败</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标变更</h4>
+                            <small class="hidden-xs">掌握真实身份，避免被动纠纷</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>商标转让</h4>
+                            <small class="hidden-xs">降低商标风险，发挥商标价值</small>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="patent" aria-labelledby="patent-tab">
-                专利代理
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">专利代理</h2>
+                    <small>PATENT APPLICATION</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利挖掘分析</h4>
+                            <small class="hidden-xs">准确抓住企业技术创新点，避免出现专利保护漏洞</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利导航</h4>
+                            <small class="hidden-xs">优化产业的专利创造，鼓励专利的协同运作</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利侵权预警分析</h4>
+                            <small class="hidden-xs">企业制定预警平台，建立企业专利数据库</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利战略分析</h4>
+                            <small class="hidden-xs">多国提升为发展战略，国际知识产权保护扩大</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>国外专利申请</h4>
+                            <small class="hidden-xs">提升企业形象，扩大市场范围</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>巴黎公约专利申请</h4>
+                            <small class="hidden-xs">时间较短，享有优先权</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>代缴专利年费</h4>
+                            <small class="hidden-xs">及时提醒，省时省心</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>发明新型同日申请</h4>
+                            <small class="hidden-xs">保护核心技，快速获取授权</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>PCT申请</h4>
+                            <small class="hidden-xs">简化申请手续，完善申请文件</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利实施许可备案</h4>
+                            <small class="hidden-xs">相关申请必备，保障专利权益</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>发明专利申请</h4>
+                            <small class="hidden-xs">独家专享，政策支持</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>实用新型专利</h4>
+                            <small class="hidden-xs">授信货代，荣誉资质</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>外观设计专利</h4>
+                            <small class="hidden-xs">独家专享，授信货代</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利驳回复审</h4>
+                            <small class="hidden-xs">保障专利权益，应对侵权依据</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利无效答辩</h4>
+                            <small class="hidden-xs">应对无效宣告，提高成功几率</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>审查意见答复</h4>
+                            <small class="hidden-xs">增加授权机会，占据主动优势</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利权恢复</h4>
+                            <small class="hidden-xs">恢复专利保护，提升企业价值</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利权评估报告</h4>
+                            <small class="hidden-xs">部门管理依据，判定侵权依据</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>著录项目变更</h4>
+                            <small class="hidden-xs">规避侵权纠纷，避免专利无效</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利管理软件</h4>
+                            <small class="hidden-xs">机构专利管理人，企业专利管理人</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利无效</h4>
+                            <small class="hidden-xs">以说明书为依据，专利不符合</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>专利数据库</h4>
+                            <small class="hidden-xs">了解最新发展，吸收先进技术</small>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="copyright" aria-labelledby="patent-tab">
-                版权服务
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">版权服务</h2>
+                    <small>COPYRIGHT SERVICE</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>软件著作权</h4>
+                            <small class="hidden-xs">法律保护，减免税收</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>作品著作权</h4>
+                            <small class="hidden-xs">无形资产，荣誉资质</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>软件著作权转让</h4>
+                            <small class="hidden-xs">无形资产，荣誉资质</small>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="innovation" aria-labelledby="innovation-tab">
-                创新服务
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">创新服务</h2>
+                    <small>COPYRIGHT SERVICE</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>高新申请</h4>
+                            <small class="hidden-xs">税收优惠，政策支持</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>高新培育</h4>
+                            <small class="hidden-xs">吸引投资，提升价值</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>创新基金申报</h4>
+                            <small class="hidden-xs">具有独立法人资格，从事高新技术方向</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>软件登记</h4>
+                            <small class="hidden-xs">法律保护，减免税收</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>18000认证</h4>
+                            <small class="hidden-xs">提升企业形象，减少经营风险</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>14000认证</h4>
+                            <small class="hidden-xs">提高企业管理水平，提高供方的质量信誉</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>ISO9000认证</h4>
+                            <small class="hidden-xs">指导需方选择供方单位，增强企业市场竞争能力</small>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="company" aria-labelledby="company-tab">
-                企业服务
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">企业服务</h2>
+                    <small>CORPORATE SERVICES</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>知识产权贯标</h4>
+                            <small class="hidden-xs">提高企业管理水平，提高供方的质量信誉</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>两化融合</h4>
+                            <small class="hidden-xs">可持续优化，持续发展</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>融资上市</h4>
+                            <small class="hidden-xs">PE倍数效应，明星效应</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>企业文化培训</h4>
+                            <small class="hidden-xs">提升企业凝聚力，建立完善流程</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>企业站制作</h4>
+                            <small class="hidden-xs">提升企业形象，打造品牌</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>公司变更</h4>
+                            <small class="hidden-xs">法律保护，荣誉资质</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>公司注册</h4>
+                            <small class="hidden-xs">提升公司品牌的价值，利用社会人力资源创造价值</small>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="tax" aria-labelledby="tax-tab">
-                税务服务
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">税务服务</h2>
+                    <small>TAX SERVICE</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>小规模记账</h4>
+                            <small class="hidden-xs">专业会计人员，24小时全天咨询</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>税控代办及票种核定</h4>
+                            <small class="hidden-xs">代办进度查询，专业的报税咨询服务</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>申办一般纳税人服务</h4>
+                            <small class="hidden-xs">专业会计人员，24小时全天咨询</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>一般纳税人记账</h4>
+                            <small class="hidden-xs">专业会计人员，24小时全天咨询</small>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div role="tabpanel" class="tab-pane fade active in" id="law" aria-labelledby="law-tab">
-                法律服务
+                <div class="server-itemName hidden-xs">
+                    <h2 class="server-title">法律服务</h2>
+                    <small>TAX SERVICE</small>
+                </div>
+                <div class="server-content">
+                    <h4 class="text-info hidden-xs">服务内容</h4>
+                    <div class="server-lists row">
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>司法文书</h4>
+                            <small class="hidden-xs">明确案件的被告，最大保障当事人利益</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>债权债务</h4>
+                            <small class="hidden-xs">当面专业梳理，提出具体的法律依据</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>劳动合同</h4>
+                            <small class="hidden-xs">建立和完善规章制度的权利，制定合理劳动定额的权利</small>
+                        </a>
+                        <a class="col-xs-6 col-sm-6 col-md-6" href="javascript:;">
+                            <h4>股权期权</h4>
+                            <small class="hidden-xs">激励员工，收益无限</small>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -193,9 +503,12 @@
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/href.js"></script>
+<script src="js/switch.js"></script>
 <script>
     $(function () {
-        $('#serverTabs a:first').tab('show')
+        if ($(window).width() < 768) {
+            $('#serverTabs').removeClass('nav-stacked')
+        }
     })
 </script>
 </body>

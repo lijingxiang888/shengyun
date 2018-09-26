@@ -63,7 +63,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="server-menu">
                         <li><a href="#">商标注册</a></li>
                         <li><a href="#">专利代理</a></li>
                         <li><a href="#">版权服务</a></li>
@@ -76,9 +76,9 @@
                 <li><a href="team.html">专业团队</a></li>
                 <li class="dropdown">
                     <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="news.html">最新动态</a></li>
-                        <li><a href="news.html">行业动态</a></li>
+                    <ul class="dropdown-menu" news-menu>
+                        <li><a href="javascript:;">最新动态</a></li>
+                        <li><a href="javascript:;">行业动态</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">联系我们</a></li>
@@ -187,6 +187,7 @@
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/href.js"></script>
+<script src="js/switch.js"></script>
 <script>
     var map = new BMap.Map("map");
     // 创建地图实例

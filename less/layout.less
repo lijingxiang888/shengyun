@@ -191,11 +191,44 @@ ul,ol {
   margin-top: 50px;
   margin-bottom: 50px;
 
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   #serverTabs {
+
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      border-bottom: 1px solid #ccc;
+    }
 
     li {
       border: 1px solid #e5e5e5;
       border-radius: 4px;
+
+      @media all and (min-width: 320px) and (max-width: 767px) {
+        margin-left: 2px;
+        margin-bottom: 8px;
+        border: 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,.18);
+      }
+
+      a {
+        @media all and (min-width: 414px) and (max-width: 767px) {
+          padding: 5px 10px;
+        }
+        @media all and (min-width: 375px) and (max-width: 413px) {
+          padding: 5px 16px;
+        }
+        @media all and (min-width: 320px) and (max-width: 374px) {
+          padding: 5px 9px;
+        }
+      }
+
     }
   }
 
@@ -209,15 +242,92 @@ ul,ol {
         border-left: 4px solid #155683;
         background-color: #f9f9f9;
 
+        @media all and (min-width: 768px) and (max-width: 991px) {
+          padding: 6px 15px;
+        }
+        @media all and (min-width: 414px) and (max-width: 767px) {
+          padding: 6px 15px;
+        }
+
         .server-title {
           margin-top: 0;
 
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            font-size: 20px;
+          }
         }
       }
 
       .server-content {
         padding: 15px 0;
         border-bottom: 1px solid #ccc;
+
+        >h4 {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .server-lists {
+          margin-left: 0;
+          margin-right: 0;
+
+          a {
+            display: block;
+            width: 49%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #121212;
+            background-color: #f9f9f9;
+
+            @media all and (min-width: 320px) and (max-width: 767px) {
+              width: 48%;
+            }
+
+            &:nth-child(even) {
+              margin-right: 0;
+            }
+
+            h4 {
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                font-size: 16px;
+              }
+              @media all and (min-width: 414px) and (max-width: 767px) {
+                margin: 5px 0;
+                padding: 5px 0;
+                font-size: 14px;
+              }
+              @media all and (min-width: 320px) and (max-width: 413px) {
+                margin: 5px 0;
+                padding: 5px 0;
+                font-size: 12px;
+              }
+            }
+
+            small {
+              display: inline-block;
+              padding-bottom: 10px;
+              font-size: 14px;
+              color: #666;
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                font-size: 12px;
+              }
+            }
+
+            &:hover {
+              .transition();
+
+              color: #a3c31d;
+              box-shadow: 0 2px 6px rgba(0,0,0,.18);
+
+              small {
+                color: #666;
+              }
+            }
+          }
+        }
       }
     }
   }
