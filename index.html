@@ -35,7 +35,7 @@
 </div>
 <![endif]-->
 <!--nav begin-->
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -59,22 +59,22 @@
                     </li>
                     <li class="dropdown">
                         <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">商标注册</a></li>
-                            <li><a href="#">专利代理</a></li>
-                            <li><a href="#">版权服务</a></li>
-                            <li><a href="#">创新服务</a></li>
-                            <li><a href="#">企业服务</a></li>
-                            <li><a href="#">税务服务</a></li>
-                            <li><a href="#">法律服务</a></li>
+                        <ul class="dropdown-menu" id="server-menu">
+                            <li><a href="javascript:;">商标注册</a></li>
+                            <li><a href="javascript:;">专利代理</a></li>
+                            <li><a href="javascript:;">版权服务</a></li>
+                            <li><a href="javascript:;">创新服务</a></li>
+                            <li><a href="javascript:;">企业服务</a></li>
+                            <li><a href="javascript:;">税务服务</a></li>
+                            <li><a href="javascript:;">法律服务</a></li>
                         </ul>
                     </li>
                     <li><a href="team.html">专业团队</a></li>
                     <li class="dropdown">
                         <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="news.html">最新动态</a></li>
-                            <li><a href="news.html">行业动态</a></li>
+                        <ul class="dropdown-menu" id="news-menu">
+                            <li><a href="javascript:;">最新动态</a></li>
+                            <li><a href="javascript:;">行业动态</a></li>
                         </ul>
                     </li>
                     <li><a href=contact.html>联系我们</a></li>
@@ -256,7 +256,7 @@
 <div class="about container">
     <div class="row">
         <div class="about-pic col-md-6 col-sm-6 col-xs-12">
-            <img class="img-responsive" src="images/about-pic.png" alt="">
+            <img class="img-responsive" src="images/about-pic.jpg" alt="" style="margin: 0 auto">
             <p>What Do We Do?</p>
         </div>
         <div class="about-title col-md-6 col-sm-6 col-xs-12" style="margin: 0 auto">
@@ -266,7 +266,7 @@
                 信、团队、责任”的公司宗旨，全方位为中小创新型企业提供国内外咨询，商标代理，软件及作品著作权登记，知识产权软件开发，专利、商标侵权诉讼，专利检索
                 分析，知识产权战略分析，知识产权价值评估，知识产权培训，知识产权海外预警分析，高新企业认定，创新基金申请，公司注册，财务咨询等多元化的服务。
             </p>
-            <div class="text-right"><a href="#">More+</a></div>
+            <div class="text-right"><a href="about.html">More+</a></div>
         </div>
     </div>
 </div>
@@ -385,7 +385,7 @@
                     </a>
                 </li>
                 <li><a href="#trade" data-toggle="tab">行业动态</a></li>
-                <li class="pull-right"><a href="#">More+</a></li>
+                <li class="pull-right"><a href="news.html">More+</a></li>
             </ul>
             <div class="tab-content">
                 <ul class="tab-pane fade in active" id="latest">
@@ -549,11 +549,23 @@
 </div>
 <!--footer end-->
 
+<!--QQ begin-->
+<div class="qq hidden-xs hidden-sm">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=3003957815&site=qq&menu=yes"><img src="images/qq.png" alt=""></a>
+</div>
+<!--QQ end-->
+
+<!--backTop begin-->
+<div class="back hidden-xs hidden-sm glyphicon glyphicon-arrow-up"></div>
+<!--backTop end-->
+
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/add.js"></script>
 <script src="js/index.js"></script>
 <script src="js/href.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/backTop.js"></script>
 </body>
 </html>

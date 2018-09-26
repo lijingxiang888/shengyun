@@ -59,7 +59,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="server.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">知识产权代理 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="server-menu">
                         <li><a href="#">商标注册</a></li>
                         <li><a href="#">专利代理</a></li>
                         <li><a href="#">版权服务</a></li>
@@ -72,9 +72,9 @@
                 <li><a href="team.html">专业团队</a></li>
                 <li class="dropdown">
                     <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="news.html">最新动态</a></li>
-                        <li><a href="news.html">行业动态</a></li>
+                    <ul class="dropdown-menu" id="news-menu">
+                        <li><a href="javascript:;">最新动态</a></li>
+                        <li><a href="javascript:;">行业动态</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">联系我们</a></li>
@@ -93,11 +93,11 @@
 <!--news begin-->
 <div class="news container">
     <ul id="newsTabs" class="nav nav-pills nav-justified" role="tablist">
-        <li role="presentation" class=""><a href="#latest" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">最新动态</a></li>
-        <li role="presentation" class="active"><a href="#business" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">行业动态</a></li>
+        <li role="presentation" class="active"><a href="#latest" id="latest-tab" role="tab" data-toggle="tab" aria-controls="latest" aria-expanded="false">最新动态</a></li>
+        <li role="presentation"><a href="#business" role="tab" id="business-tab" data-toggle="tab" aria-controls="business" aria-expanded="true">行业动态</a></li>
     </ul>
     <div id="newsContent" class="tab-content">
-        <div role="tabpanel" class="tab-pane fade" id="latest" aria-labelledby="home-tab">
+        <div role="tabpanel" class="tab-pane fade" id="latest" aria-labelledby="latest-tab">
             <ul>
                 <li class="news-item">
                     <div class="row">
@@ -129,7 +129,7 @@
                 </li>
             </ul>
         </div>
-        <div role="tabpanel" class="tab-pane fade active in" id="business" aria-labelledby="profile-tab">
+        <div role="tabpanel" class="tab-pane fade active in" id="business" aria-labelledby="business-tab">
             <ul>
                 <li class="news-item">
                     <div class="row">
@@ -224,10 +224,24 @@
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/href.js"></script>
+<script src="js/switch.js"></script>
 <script>
     $(function () {
-        $('#newsTabs a:first').tab('show')
-    })
+        var $allSa = $('#serverTabs a'),
+            $allNa = $('#newsTabs a'),
+            url = window.location.search,
+            loc = Number(url.substring(url.lastIndexOf('=') + 1, url.length));
+
+        if (url === ''){
+            $('#newsTabs a:first').tab('show');
+        } else {
+            $allNa.each(function (index, item) {
+                if (index === loc) {
+                    $(item).tab('show');
+                }
+            })
+        }
+    });
 </script>
 </body>
 </html>

@@ -6,6 +6,7 @@ h2 {
 
 /*banner样式*/
 .banner {
+  padding: 0;
 
   .carousel-inner {
 
@@ -447,6 +448,14 @@ h2 {
             margin-top: 0;
           }
         }
+
+        &:hover img{
+          transform: scale(1.1);
+        }
+
+        img {
+          .transition();
+        }
       }
     }
   }
@@ -618,5 +627,46 @@ h2 {
 
   img {
     margin: 0 auto;
+  }
+}
+
+/*QQ 样式*/
+.qq {
+  position: fixed;
+  right: 10px;
+  top: 62%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*backTop 样式*/
+.back {
+  position: fixed;
+  right: 10px;
+  top: 70%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: #272638;
+  border: 2px solid #272638;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    .transition();
+
+    color: #a3c31d;
+    border: 2px solid #a3c31d;
   }
 }
