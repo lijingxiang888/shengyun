@@ -384,97 +384,26 @@
                         最新动态
                     </a>
                 </li>
-                <li><a href="#trade" data-toggle="tab">行业动态</a></li>
+                <li>
+                    <a href="#trade" data-toggle="tab">
+                        行业动态
+                    </a>
+                </li>
                 <li class="pull-right"><a href="news.html">More+</a></li>
             </ul>
             <div class="tab-content">
                 <ul class="tab-pane fade in active" id="latest">
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            省知识产权局副局长参观指导汇成科技服务众创空间
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
+                    <!--<li>-->
+                        <!--<span class="glyphicon glyphicon-triangle-right"></span>-->
+                        <!--<a href="javascript:;">-->
+                            <!--省知识产权局副局长参观指导汇成科技服务众创空间-->
+                        <!--</a>-->
+                        <!--<time class="pull-right">2018-09-16</time>-->
+                    <!--</li>-->
+
                 </ul>
                 <ul class="tab-pane fade" id="trade">
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-triangle-right"></span>
-                        <a href="javascript:;">
-                            交流的平台，心灵的港湾！ 科协领导到保定市知识产权协会指导工作
-                        </a>
-                        <time class="pull-right">2018-09-16</time>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -551,15 +480,33 @@
 
 <!--QQ begin-->
 <div class="qq hidden-xs hidden-sm">
-    <a href="http://wpa.qq.com/msgrd?v=3&uin=3003957815&site=qq&menu=yes"><img src="images/qq.png" alt=""></a>
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2853700853&site=qq&menu=yes"><img src="images/qq.png" alt=""></a>
 </div>
 <!--QQ end-->
 
 <!--backTop begin-->
 <div class="back hidden-xs hidden-sm glyphicon glyphicon-arrow-up"></div>
 <!--backTop end-->
-
+<script type="text/template" id="mainTemplate">
+    <%$.each(mainData,function(index,item){%>
+    <li>
+        <span class="glyphicon glyphicon-triangle-right"></span>
+        <a href="javascript:;"><%=item.title%></a>
+        <time class="pull-right"><%=item.date%></time>
+    </li>
+    <%})%>
+</script>
+<script type="text/template" id="mainTemplate2">
+    <%$.each(mainData,function(index,item){%>
+    <li>
+        <span class="glyphicon glyphicon-triangle-right"></span>
+        <a href="javascript:;"><%=item.title%></a>
+        <time class="pull-right"><%=item.date%></time>
+    </li>
+    <%})%>
+</script>
 <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/ejs.min.js"></script>
 <script src="js/hoverDown.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/add.js"></script>
@@ -567,5 +514,60 @@
 <script src="js/href.js"></script>
 <script src="js/switch.js"></script>
 <script src="js/backTop.js"></script>
+<script>
+    $(function () {
+        function getLatestNews() {
+            $.ajax({
+                url:'./data/latestnews.json',
+                type:'get',
+                async:false,
+                dataType:'json',
+                success:bindHTML
+            });
+
+            function bindHTML(data) {
+                //使用EJS中的RENDER向指定模板中提供需要的数据,EJS会把模板和字符串按照既定的规则进行解析渲染,最后得到的是数据和HTML结构拼接在一起的字符串
+                var mainHTML = $('#mainTemplate').html(); //获取模板的html结构
+                //ejs.render参数(模板的html结构,{模板数据:data数据})
+                var result = ejs.render(mainHTML,{mainData:data});
+                //现在的result又有结构又有数据,跟字符串拼接 str的结果一模一样,然后在输出到html的指定容器中
+                $('#latest').html(result);
+            }
+
+            $('#latest li').click(function () {
+                var pageNum = $(this).index();
+                window.location.href = './detail.html?pick=0&pagenum=' + pageNum
+            })
+        }
+        getLatestNews();
+        function getBusinessNews() {
+            $.ajax({
+                url:'./data/businessnews.json',
+                type:'get',
+                async:false,
+                dataType:'json',
+                success:bindHTML
+            });
+
+            function bindHTML(data) {
+                //使用EJS中的RENDER向指定模板中提供需要的数据,EJS会把模板和字符串按照既定的规则进行解析渲染,最后得到的是数据和HTML结构拼接在一起的字符串
+                var mainHTML = $('#mainTemplate2').html(); //获取模板的html结构
+                //ejs.render参数(模板的html结构,{模板数据:data数据})
+                var result = ejs.render(mainHTML,{mainData:data});
+                //现在的result又有结构又有数据,跟字符串拼接 str的结果一模一样,然后在输出到html的指定容器中
+                $('#trade').html(result);
+            }
+
+            $('#trade li').click(function () {
+                var pageNum = $(this).index();
+                window.location.href = './detail.html?pick=1&pagenum=' + pageNum
+            })
+        }
+        getBusinessNews();
+
+
+
+    })
+</script>
 </body>
 </html>

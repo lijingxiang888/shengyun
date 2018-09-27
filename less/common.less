@@ -1,6 +1,10 @@
-
+ul,ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /*过渡动画*/
-.transition(@property:all;@duration:.3s;@function:linear;@delay:0s;) {
+.transition(@property:all;@duration:.2s;@function:linear;@delay:0s;) {
   -webkit-transition: @property @duration @function @delay;
   -moz-transition: @property @duration @function @delay;
   -ms-transition: @property @duration @function @delay;
@@ -139,5 +143,46 @@
       font-size: 12px;
       text-align: center;
     }
+  }
+}
+
+/*QQ 样式*/
+.qq {
+  position: fixed;
+  right: 10px;
+  top: 62%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*backTop 样式*/
+.back {
+  position: fixed;
+  right: 10px;
+  top: 70%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: #272638;
+  border: 2px solid #272638;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    .transition();
+
+    color: #a3c31d;
+    border: 2px solid #a3c31d;
   }
 }

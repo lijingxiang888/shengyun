@@ -7,7 +7,6 @@ $(function () {
     var $winH = $(window).height(), //浏览器一屏高度
         $top = $('.team-show').offset().top,
         $height = $('.team-show').height();
-    console.log($winH);
 
     function myshow() {
         var $sTop = $(window).scrollTop(); //滚动条实施滚出去的距离
