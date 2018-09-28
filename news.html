@@ -189,7 +189,7 @@
         <div class="row">
             <div class="col-md-11 col-sm-12 col-xs-12">
                 <p class="hidden-xs hidden-sm">
-                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 公安机关备案号：xxxxxxxxxxx 技术支持：<a
+                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 技术支持：<a
                         href="http://www.shenzhuwang.com">申注网</a>
                 </p>
                 <p>
@@ -199,7 +199,7 @@
                     服务时间：（周一至周五） 08:30-12:00 13:00-17:0
                 </p>
                 <p class="hidden-lg hidden-md text-center">
-                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 公安机关备案号：xxxxxxxxxxx
+                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 <a href="http://www.shenzhuwang.com">申注网</a>
                 </p>
             </div>
             <div class="col-md-1 col-sm-2 col-xs-2 hidden-xs hidden-sm">
@@ -261,6 +261,7 @@
             $.ajax({
                 url:'./data/latestnews.json',
                 type:'get',
+                async:false,
                 dataType:'json',
                 success:bindHTML
             });
@@ -272,12 +273,18 @@
                 var result = ejs.render(mainHTML,{mainData:data});
                 //现在的result又有结构又有数据,跟字符串拼接 str的结果一模一样,然后在输出到html的指定容器中
                 $('#latest').html(result);
+
+                $('#latest li').click(function () {
+                    var pageNum = $(this).index();
+                    window.location.href = './detail.html?pick=0&pagenum=' + pageNum
+                })
             }
         }
         function getBusinessNews() {
             $.ajax({
                 url:'./data/businessnews.json',
                 type:'get',
+                async:false,
                 dataType:'json',
                 success:bindHTML
             });
@@ -289,12 +296,18 @@
                 var result = ejs.render(mainHTML,{mainData:data});
                 //现在的result又有结构又有数据,跟字符串拼接 str的结果一模一样,然后在输出到html的指定容器中
                 $('#business').html(result);
+
+                $('#business li').click(function () {
+                    var pageNum = $(this).index();
+                    window.location.href = './detail.html?pick=1&pagenum=' + pageNum
+                })
             }
         }
 
         if (url === '') {
             $('#newsTabs a:first').tab('show');
             getLatestNews();
+            getBusinessNews();
         } else {
             $allNa.each(function (index, item) {
                 if (index === loc) {

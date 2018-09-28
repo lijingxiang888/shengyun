@@ -344,26 +344,14 @@
                 <ol class="carousel-indicators">
                     <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#newsCarousel" data-slide-to="1"></li>
-                    <li data-target="#newsCarousel" data-slide-to="2"></li>
-                    <li data-target="#newsCarousel" data-slide-to="3"></li>
-                    <li data-target="#newsCarousel" data-slide-to="4"></li>
                 </ol>
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img class="img-responsive" src="images/banner1.jpg" alt="First slide">
+                        <img class="img-responsive" src="images/news-pic1.jpg" alt="First slide">
                     </div>
                     <div class="item">
-                        <img class="img-responsive" src="images/banner2.jpg" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="images/banner3.jpg" alt="Third slide">
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="images/banner4.jpg" alt="Fourth slide">
-                    </div>
-                    <div class="item">
-                        <img class="img-responsive" src="images/banner5.jpg" alt="Fifth slide">
+                        <img class="img-responsive" src="images/news-pic2.jpg" alt="Second slide">
                     </div>
                 </div>
                 <!-- 轮播（Carousel）导航 -->
@@ -385,7 +373,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#trade" data-toggle="tab">
+                    <a href="#business" data-toggle="tab">
                         行业动态
                     </a>
                 </li>
@@ -402,7 +390,7 @@
                     <!--</li>-->
 
                 </ul>
-                <ul class="tab-pane fade" id="trade">
+                <ul class="tab-pane fade" id="business">
 
                 </ul>
             </div>
@@ -457,7 +445,7 @@
         <div class="row">
             <div class="col-md-11 col-sm-12 col-xs-12">
                 <p class="hidden-xs hidden-sm">
-                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 公安机关备案号：xxxxxxxxxxx 技术支持：<a
+                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 技术支持：<a
                         href="http://www.shenzhuwang.com">申注网</a>
                 </p>
                 <p>
@@ -467,7 +455,7 @@
                     服务时间：（周一至周五） 08:30-12:00 13:00-17:0
                 </p>
                 <p class="hidden-lg hidden-md text-center">
-                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 公安机关备案号：xxxxxxxxxxx
+                    Copyright©2018 保定盛雲知识产权代理有限公司 All Rights Reserved. 冀ICP备xxxxxxxx号 <a href="http://www.shenzhuwang.com">申注网</a>
                 </p>
             </div>
             <div class="col-md-1 col-sm-2 col-xs-2 hidden-xs hidden-sm">
@@ -555,17 +543,15 @@
                 //ejs.render参数(模板的html结构,{模板数据:data数据})
                 var result = ejs.render(mainHTML,{mainData:data});
                 //现在的result又有结构又有数据,跟字符串拼接 str的结果一模一样,然后在输出到html的指定容器中
-                $('#trade').html(result);
+                $('#business').html(result);
             }
 
-            $('#trade li').click(function () {
+            $('#business li').click(function () {
                 var pageNum = $(this).index();
                 window.location.href = './detail.html?pick=1&pagenum=' + pageNum
             })
         }
         getBusinessNews();
-
-
 
     })
 </script>
