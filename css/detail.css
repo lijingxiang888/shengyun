@@ -1,0 +1,27 @@
+/*detail 样式*/
+.detail {
+  color: #666;
+}
+.detail .detail-header {
+  padding-bottom: 35px;
+  text-align: center;
+  color: #121212;
+  border-bottom: 1px solid #e5e5e5;
+}
+.detail .detail-header h2 {
+  padding: 20px 0;
+  text-align: center;
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .detail .detail-header h2 {
+    font-size: 20px;
+  }
+}
+.detail .detail-con {
+  margin: 35px 0;
+}
+.detail .detail-con p {
+  margin: 20px 0;
+  line-height: 2em;
+  text-indent: 2em;
+}

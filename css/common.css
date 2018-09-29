@@ -1,0 +1,162 @@
+html,
+body {
+  overflow-x: hidden;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*过渡动画*/
+/*导航样式*/
+.navbar {
+  margin-bottom: 0;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar a.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .navbar a.navbar-brand {
+    padding: 15px 6px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .navbar a.navbar-brand {
+    padding: 15px 6px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 1200px) {
+  .navbar .nav > li > a {
+    padding: 15px 15px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .navbar .nav > li > a {
+    padding: 15px 6px;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 991px) {
+  .navbar .nav > li > a {
+    padding: 15px 7px;
+  }
+}
+.navbar .nav > li .dropdown-menu {
+  background: none;
+}
+.navbar .nav > li .dropdown-menu li {
+  margin-bottom: 2px;
+  background-color: #eee;
+}
+.navbar .nav > li .dropdown-menu li:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  background-color: #A3C31D;
+}
+.navbar .nav > li .dropdown-menu li a {
+  padding: 10px 15px;
+  color: #5e5e5e;
+  background: none;
+}
+.navbar .nav > li .dropdown-menu li a:hover {
+  color: #fff;
+}
+/*fooer 样式*/
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  color: #b0b0b0;
+  background-color: #323335;
+}
+.footer a {
+  display: inline-block;
+  color: #b0b0b0;
+  text-decoration: none;
+}
+.footer a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  color: #a3c31d;
+}
+.footer .footer-link {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #444547;
+}
+.footer .footer-link a {
+  padding: 0 12px;
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .footer .footer-link a {
+    padding: 0 6px;
+  }
+}
+.footer .footer-des {
+  padding: 50px 0 20px 0;
+  border-bottom: 0;
+}
+.footer .footer-des a {
+  padding: 0 12px;
+}
+.footer .footer-des a:nth-of-type(1) {
+  padding-left: 0;
+}
+@media all and (min-width: 320px) and (max-width: 991px) {
+  .footer .row {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+/*QQ 样式*/
+.qq {
+  position: fixed;
+  right: 10px;
+  top: 62%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.qq img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*backTop 样式*/
+.back {
+  position: fixed;
+  right: 10px;
+  top: 70%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: #272638;
+  border: 2px solid #272638;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.back:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  color: #a3c31d;
+  border: 2px solid #a3c31d;
+}
