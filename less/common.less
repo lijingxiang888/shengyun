@@ -17,8 +17,21 @@ ul,ol {
 }
 
 /*导航样式*/
+.navbar-default {
+  @media all and (min-width: 768px) {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+}
+
 .navbar {
   margin-bottom: 0;
+
+  @media all and (min-width: 768px) {
+    padding-top: 15px;
+    z-index: 100;
+  }
 
   a {
     color: #fff;
@@ -26,6 +39,14 @@ ul,ol {
     &.navbar-brand {
       font-size: 30px;
       font-weight: bold;
+
+      @media all and (min-width: 768px) {
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+        }
+      }
 
       @media all and (min-width: 768px) and (max-width: 991px) {
         & {
@@ -49,6 +70,14 @@ ul,ol {
     > li {
 
       > a {
+
+        @media all and (min-width: 768px) {
+          color: #fff;
+          &:hover,&:focus {
+            color: #5e5e5e;
+          }
+        }
+
         @media all and (min-width: 1200px) {
           & {
             padding: 15px 15px;

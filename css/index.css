@@ -5,8 +5,14 @@ h2 {
 .banner {
   padding: 0;
 }
+@media all and (min-width: 768px) {
+  .banner .carousel {
+    top: -67px;
+    z-index: 99;
+  }
+}
 @media all and (min-width: 320px) and (max-width: 767px) {
-  .banner .carousel-inner img {
+  .banner .carousel .carousel-inner img {
     height: 250px;
   }
 }

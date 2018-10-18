@@ -10,8 +10,20 @@ ol {
 }
 /*过渡动画*/
 /*导航样式*/
+@media all and (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
 .navbar {
   margin-bottom: 0;
+}
+@media all and (min-width: 768px) {
+  .navbar {
+    padding-top: 15px;
+    z-index: 100;
+  }
 }
 .navbar a {
   color: #fff;
@@ -19,6 +31,14 @@ ol {
 .navbar a.navbar-brand {
   font-size: 30px;
   font-weight: bold;
+}
+@media all and (min-width: 768px) {
+  .navbar a.navbar-brand {
+    color: #fff;
+  }
+  .navbar a.navbar-brand:hover {
+    color: #fff;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar a.navbar-brand {
@@ -32,6 +52,15 @@ ol {
     padding: 15px 6px;
     font-size: 16px;
     font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) {
+  .navbar .nav > li > a {
+    color: #fff;
+  }
+  .navbar .nav > li > a:hover,
+  .navbar .nav > li > a:focus {
+    color: #5e5e5e;
   }
 }
 @media all and (min-width: 1200px) {

@@ -43,6 +43,7 @@ $(function () {
                 var mainHTML = $('#mainTemplate').html(); //获取模板的html结构
                 var result = ejs.render(mainHTML,{mainData:data}); //向模板里填数据
                 $('#latest').html(result); //现在的result又有结构又有数据
+
                 $('#latest li').click(function () { //li存在之后绑定点击事件
                     var pageNum = $(this).index();
                     window.location.href = './detail.html?pick=0&pagenum=' + pageNum
