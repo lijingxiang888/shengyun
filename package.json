@@ -1,0 +1,28 @@
+{
+  "name": "shengyun",
+  "version": "1.0.0",
+  "description": "保定盛雲知识产权代理有限公司官网",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijingxiang888/shengyun.git"
+  },
+  "keywords": [
+    "保定盛雲"
+  ],
+  "author": "924415666@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lijingxiang888/shengyun/issues"
+  },
+  "homepage": "https://github.com/lijingxiang888/shengyun#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-less": "^4.0.1",
+    "less": "^3.8.1"
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>联系我们|保定盛雲知识产权代理有限公司</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="924415666@qq.com">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="renderer" content="webkit">
+    <meta name="Description"
+          content="保定盛雲知识产权代理有限公司是目前国内专业性最强的知识产权顾问咨询公司之一。公司成立以来，本着“专业，诚信，和谐”的公司宗旨,主要以商标驳回复审,商标异议答辩,专利检索分析,全方位为个人、企业提供海内外专利申请，商标注册，专利与商标的纠纷。"/>
+    <meta name="Keywords" content="商标注册,商标驳回复审,商标异议答辩,专利申请,专利检索分析,版权登记,高新认定"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet/less" href="less/layout.less">-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=yFfyiTKxLG3RFwMIl5jxXrvc9NeWeKt9">
+    </script>
+</head>
+<body>
+<!--[if lte IE 8]>
+<div class="point">
+    <p style="text-align: center;font-size: 30px">
+        您正在使用一个<strong>过时</strong>的浏览器。请
+        <a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，
+        以提高您的体验。
+    </p>
+</div>
+<![endif]-->
+
+<!--nav begin-->
+@@include('include/header.html')
+<!--header end-->
+
+<!--banner begin-->
+<div class="banner container-fluid">
+    <img class="hidden-xs hidden-sm img-responsive" src="images/contact-banner.jpg " alt="">
+    <img class="hidden-md hidden-lg img-responsive" src="images/contact-mbanner.jpg " alt="">
+</div>
+<!--banner end-->
+
+<!--map begin-->
+<div class="contact container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            地址：保定市竞秀区朝阳南大街358号盛泰中国02栋2003
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span class="glyphicon glyphicon-phone"></span>
+            联系人：李娇 13931361865 0312-2013862
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span class="glyphicon glyphicon-envelope"></span>
+            Email：2853700873@qq.com
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span class="glyphicon glyphicon-send"></span>
+            乘车路线：市内公交 19、60、501等可到
+        </div>
+    </div>
+</div>
+<!--map end-->
+
+<!--contact begin-->
+<div class="map container hidden-xs hidden-sm" id="map">
+
+</div>
+<!--contact end-->
+
+<!--footer begin-->
+@@include('include/footer.html')
+<!--footer end-->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/hoverDown.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/href.js"></script>
+<script src="js/switch.js"></script>
+<script>
+    var map = new BMap.Map("map");
+    // 创建地图实例
+    var point = new BMap.Point(109.056,34.167);
+    // 创建点坐标
+    map.centerAndZoom(point, 5);
+    // 初始化地图，设置中心点坐标和地图级别
+    window.setTimeout(function(){
+        map.panTo(new BMap.Point(109.056,34.167));
+    },100);
+    //100MS自动定位到中心点
+    map.enableScrollWheelZoom(true);
+    //开启鼠标滚轮缩放
+    map.addControl(new BMap.ScaleControl());
+    //开启比例尺 控件
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.OverviewMapControl());
+
+    var pointAll=[
+        {point:"115.475,38.868"}
+    ];
+    var pointInfo = [];     //存放标注点经纬信息的数组
+    var marker = [];    //存放标注点对象的数组
+    for (var i = 0;i < pointAll.length;i ++){
+
+        p0 = pointAll[i].point.split(",")[0];  //按照原数组的point格式将地图点坐标的经纬度分别提出来
+        p1 = pointAll[i].point.split(",")[1];
+
+        pointInfo[i] = new BMap.Point(p0,p1); //循环生成新的地图点
+
+        marker[i] = new BMap.Marker(pointInfo[i]);
+
+        map.addOverlay(marker[i]);  //在地图上循环添加标记
+    }
+</script>
+</body>
+</html>
