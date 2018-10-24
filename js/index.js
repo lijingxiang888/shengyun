@@ -26,8 +26,8 @@ $(function () {
     $(window).scroll(myshow);
 
     //获取最新动态和行业资讯
-    var latesUrl = './data/latestnews.json',
-        bussiUrl = './data/businessnews.json';
+    var latesUrl = '../data/latestnews.json',
+        bussiUrl = '../data/businessnews.json';
 
     function getNews(url) {
         $.ajax({

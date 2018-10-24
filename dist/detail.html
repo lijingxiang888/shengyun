@@ -11,15 +11,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="author" content="924415666@qq.com">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
     <meta name="renderer" content="webkit">
     <meta name="Description"
           content="保定盛雲知识产权代理有限公司是目前国内专业性最强的知识产权顾问咨询公司之一。公司成立以来，本着“专业，诚信，和谐”的公司宗旨,主要以商标驳回复审,商标异议答辩,专利检索分析,全方位为个人、企业提供海内外专利申请，商标注册，专利与商标的纠纷。"/>
     <meta name="Keywords" content="商标注册,商标驳回复审,商标异议答辩,专利申请,专利检索分析,版权登记,高新认定"/>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!--<link rel="stylesheet/less" href="less/detail.less">-->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -87,7 +87,7 @@
 
 <!--banner begin-->
 <div class="banner container-fluid">
-    <img class="img-responsive" src="images/news-banner.jpg" alt="">
+    <img class="img-responsive" src="../images/news-banner.jpg" alt="">
 </div>
 <!--banner end-->
 
@@ -160,12 +160,12 @@
             <%})%>
         </div>
 </script>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/ejs.min.js"></script>
-<script src="js/hoverDown.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/href.js"></script>
-<script src="js/switch.js"></script>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/ejs.min.js"></script>
+<script src="../js/hoverDown.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/href.js"></script>
+<script src="../js/switch.js"></script>
 <script>
     $(function () {
         String.prototype.myQueryURLParameter = function myQueryURLParameter() {
@@ -185,7 +185,7 @@
             loc = Number(url.substring(url.lastIndexOf('=') + 1, url.length));
         function getPage(url) {
             $.ajax({
-                url:'data/' + url +'.json',
+                url:'../data/' + url +'.json',
                 type:'get',
                 dataType:'json',
                 success:bindHTML
